@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 DATABASE_PWD = os.getenv('DATABASE_PWD')
 
-URL_DATABASE = f'postgresql://postgress:{DATABASE_PWD}@localhost:5432/turkishlanguage'
+URL_DATABASE = f'postgresql://postgres:{DATABASE_PWD}@localhost:5432/turkishlanguage'
 
 engine = create_engine(URL_DATABASE)
 
